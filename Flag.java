@@ -6,11 +6,10 @@ public class Flag extends Applet {
 	private AmericanFlag flag;
 
 	public void init() {
-		flag = new AmericanFlag(50, 50, 1.0);
+		flag = flag(50, 50, 1.0);
 	}
 
 	public void paint(Graphics g) {
 		flag.draw(g);
 	}
-
 }

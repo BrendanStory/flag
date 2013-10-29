@@ -2,41 +2,30 @@ import java.awt.*;
 import java.applet.*;
 public class AmericanFlag {
 	
-	private int x, y, width, height;
+	
 	private double scale;
+	private Rectangle union;
+	private Rectangle[] stripes;
+	//private Star[] stars;
 
-	public AmericanFlag(int x, int y, double scale) {
+	public AmericanFlag(Rectangle union, Rectangle[] stripes, double scale, int x) {
 
-		setX(x);
-		setY(y);
 		setScale(scale);
-	}
 
-	public draw(Graphics g){
-
-	}
-
-	public int x(){
-		return x;
-	}
-	public int y(){
-		return y;
+		for (int i = 0; i <= 13; i++) {
+			union(topLeft, width, height);
+			setX = x - 10;
+		}
 	}
 
 	public double scale(){
 		return scale;
 	}
 
-	public void setX(int x){
-		this.x = x;
-	}
-
-	public void setY(int y){
-		this.y = y;
-	}
-
 	public void setScale(double scale){
 		this.scale = scale;
+
+		
 	}
 
 }
